@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript in FrondEnd</h1>
+    <h1 id="dom">DOM</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, hic perferendis cum itaque aspernatur saepe sint, modi at odio error necessitatibus fuga doloremque laboriosam ipsum atque debitis? Repellendus, nemo magnam.</p>
+    <button onclick=change()>Click</button>
+    <h1 class="para">Html DOM</h1>
+</body>
+<script>
+    //let content = document.getElementsByTagName('h1')
+    //console.log(content[2]); //
+    let content2 = document.getElementById('dom')
+    console.log(content2);
+    let content3 = document.getElementsByClassName('para')
+    console.log(content3[1]);
+    let query = document.querySelector('.para')
+    console.log(query);
+    let queryAll = document.querySelectorAll('.para')
+    console.log(queryAll);
+    content3[1].innerHTML = 'Document Object Model'
+    //dom.innerHTML='Document object model'
+ function change(){
+    dom.innerHTML='Document Object Model'
+    dom.style.color = 'green'
+    dom.style.fontSize = '40px'
+
+ }
+
+
+
+</script>
+</html>
